@@ -195,22 +195,24 @@ nav ul li a:hover {
     display: block;
 }
 
+
+#Dining {
+    padding: 50px 0;
+}
+
 .dining-images {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .dining-item {
-    width: 48%; /* Adjust width to ensure two images per row */
-    position: relative;
-    overflow: hidden; /* Ensures text overflow is hidden */
-    margin-bottom: 20px; /* Adjust spacing between items */
+    margin-right: 20px;
 }
 
 .dining-images img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 200px;
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.5s;
