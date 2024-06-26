@@ -126,8 +126,13 @@ nav ul li a:hover {
     align-items: center;
     max-width: 800px;
     text-align: center;
-    color: #ffffff;
 }
+.about-col-2 {
+    flex: 1;
+    padding-left: 20px;
+    color: #fff; 
+}
+
 
 .tab-titles {
     display: flex;
