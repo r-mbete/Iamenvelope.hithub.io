@@ -196,6 +196,7 @@ nav ul li a:hover {
 }
 
 
+
 #Dining {
     padding: 50px 0;
 }
@@ -216,56 +217,6 @@ nav ul li a:hover {
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.5s;
-}
-
-.layer {
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ffd800);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 0.9em;
-    transition: height 0.5s;
-}
-
-.layer h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: #fff; /* Ensure text color is white */
-}
-
-.layer a {
-    margin-top: 20px;
-    color: #000000;
-    text-decoration: none;
-    font-size: 1em;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.dining-item .layer {
-    padding: 10px; /* Ensure padding on layer content */
-}
-
-.dining-item:hover .layer {
-    height: 100%;
-}
-
-.dining-item:hover img {
-    transform: scale(1.1);
 }
 
 .dining-item:hover .layer h3 {
