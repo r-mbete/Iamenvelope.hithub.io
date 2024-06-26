@@ -195,22 +195,17 @@ nav ul li a:hover {
     display: block;
 }
 
-#Dining {
-    padding: 50px 0;
-    width: 100%;
-}
-
 .dining-images {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .dining-item {
-    margin: 10px;
-    width: 45%;
+    width: 48%; /* Adjust width to ensure two images per row */
     position: relative;
+    overflow: hidden; /* Ensures text overflow is hidden */
+    margin-bottom: 20px; /* Adjust spacing between items */
 }
 
 .dining-images img {
@@ -243,6 +238,7 @@ nav ul li a:hover {
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
+    color: #fff; /* Ensure text color is white */
 }
 
 .layer a {
@@ -258,6 +254,10 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.dining-item .layer {
+    padding: 10px; /* Ensure padding on layer content */
+}
+
 .dining-item:hover .layer {
     height: 100%;
 }
@@ -270,9 +270,6 @@ nav ul li a:hover {
     color: #000000;
 }
 
-.dining-item:hover .layer p {
-    color: #000000;
-}
 
 #Meetings\\/Events {
     padding: 50px 0;
@@ -378,28 +375,52 @@ nav ul li a:hover {
     nav {
         flex-direction: column;
         align-items: center;
+        position: relative; /* Ensure relative positioning for absolute children */
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
         display: none;
+        position: absolute;
+        top: 100%; /* Position below the header */
+        left: 0;
+        width: 100%;
+        background: #000; /* Background color for navigation */
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform: translateY(-100%); /* Initially off-screen */
+        opacity: 0; /* Initially hidden */
+        z-index: 10; /* Ensure it's above other content */
+    }
+
+    nav.active ul {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
     }
 
     nav ul li {
         margin: 10px 0;
     }
 
-    nav.active ul {
-        display: flex;
-    }
-
     .fa-bars {
         display: block;
+        font-size: 25px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px; /* Adjust positioning as needed */
+        right: 20px; /* Adjust positioning as needed */
+        z-index: 20; /* Ensure above other content */
     }
 
     .fa-xmark {
-        display: none;
+        display: none; /* Initially hidden */
+        font-size: 25px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px; /* Adjust positioning as needed */
+        right: 20px; /* Adjust positioning as needed */
+        z-index: 20; /* Ensure above other content */
     }
 
     nav.active .fa-bars {
@@ -414,14 +435,17 @@ nav ul li a:hover {
         margin-top: 20px;
         font-size: 1.2em;
         padding: 0 10px;
+        text-align: center; /* Center align text */
     }
 
     .header-text h1 {
         font-size: 1.8em;
+        margin-bottom: 10px; /* Adjust spacing */
     }
 
     .header-text p {
         font-size: 1em;
+        margin-bottom: 10px; /* Adjust spacing */
     }
 
     #About {
@@ -429,38 +453,124 @@ nav ul li a:hover {
     }
 
     .about-images {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        display: flex; /* Ensure images display side by side */
+        justify-content: space-between; /* Adjust space between images */
+        gap: 10px; /* Adjust gap between images */
+        flex-wrap: wrap; /* Wrap images on smaller screens */
     }
 
     .about-images img {
-       
-width: 90%;
-max-width: 300px;
-}
+        width: 48%; /* Ensure two images per row */
+        max-width: 100%; /* Ensure images do not exceed container width */
+        height: auto;
+        border-radius: 15px;
+    }
+
     .about-col-2 {
-    margin-top: 20px;
+        flex: 1; /* Ensure column takes remaining width */
+        padding: 0 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .dining-images {
+        display: flex; /* Ensure images display side by side */
+        justify-content: space-between; /* Adjust space between images */
+        gap: 10px; /* Adjust gap between images */
+        flex-wrap: wrap; /* Wrap images on smaller screens */
+        margin-top: 20px; /* Adjust top margin */
+    }
+
+    .dining-item {
+        width: 48%; /* Ensure two items per row */
+        max-width: 100%; /* Ensure items do not exceed container width */
+        position: relative;
+        overflow: hidden; /* Ensures text overflow is hidden */
+    }
+
+    .dining-images img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.5s;
+    }
+
+    .layer {
+        width: 100%;
+        height: 0%;
+        background: linear-gradient(rgba(0,0,0,0.6), #ffd800);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        font-size: 0.9em;
+        transition: height 0.5s;
+    }
+
+    .layer h3 {
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: #fff; /* Ensure text color is white */
+    }
+
+    .layer a {
+        margin-top: 20px;
+        color: #000000;
+        text-decoration: none;
+        font-size: 1em;
+        line-height: 60px;
+        background: #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .dining-item .layer {
+        padding: 10px; /* Ensure padding on layer content */
+    }
+
+    .dining-item:hover .layer {
+        height: 100%;
+    }
+
+    .dining-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .dining-item:hover .layer h3 {
+        color: #000000;
+    }
+
+    .meetings-images {
+        display: flex; /* Ensure images display side by side */
+        justify-content: space-between; /* Adjust space between images */
+        gap: 10px; /* Adjust gap between images */
+        flex-wrap: wrap; /* Wrap images on smaller screens */
+        margin-top: 20px; /* Adjust top margin */
+    }
+
+    .meetings-images img {
+        width: 48%; /* Ensure two images per row */
+        max-width: 100%; /* Ensure images do not exceed container width */
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .meetings-images img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.5s;
+    }
 }
 
-.dining-images {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.dining-item {
-    width: 90%;
-    max-width: 400px;
-}
-
-.meetings-images {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.meetings-images img {
-    width: 90%;
-    max-width: 300px;
-}
