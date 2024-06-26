@@ -195,27 +195,27 @@ nav ul li a:hover {
     display: block;
 }
 
- #Dining {
-     padding: 30px 0;
- }
-
 #Dining {
     padding: 50px 0;
+    width: 100%;
 }
 
 .dining-images {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .dining-item {
-    margin-right: 20px;
+    margin: 10px;
+    width: 45%;
+    position: relative;
 }
 
 .dining-images img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.5s;
@@ -236,58 +236,42 @@ nav ul li a:hover {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.9em;
     transition: height 0.5s;
 }
 
-    .layer h3 {
-        font-weight: 500;
-        margin-bottom: 20px;
-    }
-
-    .layer a {
-        margin-top: 20px;
-        color: #000000;
-        text-decoration: none;
-        font-size: 18px;
-        line-height: 60px;
-        background: #fff;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        text-align: center;
-    }
-
-.dining-item {
-    position: relative;
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
-    .dining-item:hover .layer {
-        height: 100%;
-    }
-
-    .dining-item:hover img {
-        transform: scale(1.1);
-    }
-
-    .dining-item:hover .layer h3 {
-        color: #000000;
-    }
-
-    .dining-item:hover .layer p {
-        color: #000000;
-    }
-
-#food3:hover .layer {
-    background-image: linear-gradient(to bottom, #000000, #ffffff);
+.layer a {
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
 }
 
-#wine1:hover .layer {
-    background-image: linear-gradient(to bottom, #000000, #ffffff);
+.dining-item:hover .layer {
+    height: 100%;
 }
 
-#dining:hover .layer {
-    background-image: linear-gradient(to bottom, #000000, #ffffff);
+.dining-item:hover img {
+    transform: scale(1.1);
+}
+
+.dining-item:hover .layer h3 {
+    color: #000000;
+}
+
+.dining-item:hover .layer p {
+    color: #000000;
 }
 
 #Meetings\\/Events {
