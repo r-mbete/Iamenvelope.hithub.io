@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Envelope</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Name.jpg" class="Logo" alt="Logo">
+                <ul>
+                    <li><a href="#Header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Dining">Dining</a></li>
+                    <li><a href="#Meetings/Events">Meetings and Events</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <h1>The Envelope Restaurant</h1>
+                <p>Travel the world on your plate</p>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-images">
+                    <img src="images/food1.jpg" alt="Food 1">
+                    <img src="images/food2.jpg" alt="Food 2">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>Welcome to The Envelope, where we bring together the rich flavors of Kenyan cuisine and the diverse tastes of the world. Our passion is to create a unique culinary experience that celebrates global diversity while honoring our local heritage. Each dish is a harmonious blend of traditional Kenyan ingredients and international influences, crafted to delight your palate and transport you on a global gastronomic journey. Join us in savoring the best of both worlds, right here in the heart of Kenya.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Vision')">Vision</p>
+                        <p class="tab-links" onclick="opentab('Mission')">Mission</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Vision">
+                        <ul>
+                            <li><span>To be a premier culinary destination that seamlessly blends Kenyan cuisine with global flavors, celebrating cultural diversity and enriching the culinary landscape.</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Mission">
+                        <ul>
+                            <li><span>To create an exceptional dining experience by combining the rich heritage of Kenyan cuisine with diverse flavors from around the world, promoting global unity and appreciation through every dish we serve.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Dining">
+        <div class="container">
+            <h1 class="sub-title">Dining</h1>
+            <div class="dining-experience">
+                <div class="dining-images">
+                    <div class="dining-item" id="food3">
+                        <img src="images/food3.jpg" alt="Food 3">
+                        <div class="layer">
+                            <h3>Foods & Drinks</h3>
+                            <p>Savor our fusion of Kenyan and international flavors, paired with refreshing beverages.</p>
+                        </div>
+                    </div>
+                    <div class="dining-item" id="wine1">
+                        <img src="images/wine1.png" alt="Wine 1">
+                        <div class="layer">
+                            <h3>Ambience</h3>
+                            <p>Relax in a cozy, elegant setting with cultural touches.</p>
+                        </div>
+                    </div>
+                    <div class="dining-item" id="dining">
+                        <img src="images/Dining.jpeg" alt="Dining">
+                        <div class="layer">
+                            <h3>Seating Arrangements</h3>
+                            <p>Enjoy comfortable and intimate seating, perfect for any occasion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Meetings/Events">
+        <div class="container">
+            <div class="about-col-2">
+                <h1 class="sub-title">Meetings/Events</h1>
+                <p>Host your next meeting or event at The Envelope Restaurant. Our versatile event spaces can accommodate up to 200 guests and can be adapted to your specific needs. Inquire about our fully-serviced meeting rooms, boardrooms, and business center amenities.</p>
+            </div>
+            <div class="meetings-images">
+                <img src="images/dinner.jpg" alt="dinner">
+                <img src="images/dinner 2.jpg" alt="dinner 2">
+                <img src="images/dinner 3.jpg" alt="dinner 3">
+                <img src="images/dinner 4.jpg" alt="dinner 4">
+                <img src="images/dinner 5.jpg" alt="dinner 5">
+                <img src="images/dinner 6.jpg" alt="dinner 6">
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> envelopedining@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+254103274398</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.gmail.com/" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links'); 
+        var tabcontents = document.getElementsByClassName('tab-contents'); 
+
+        function opentab(tabname) {
+            for (let link of tablinks) {
+                link.classList.remove('active-link');
+            }
+            for (let content of tabcontents) {
+                content.classList.remove('active-tab');
+            }
+            document.getElementById(tabname).classList.add('active-tab');
+            Array.from(tablinks).find(link => link.getAttribute('onclick').includes(tabname)).classList.add('active-link');
+        }
+    </script>
+</body>
+</html>
