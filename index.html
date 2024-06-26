@@ -19,8 +19,8 @@
                     <li><a href="#Dining">Dining</a></li>
                     <li><a href="#Meetings/Events">Meetings and Events</a></li>
                     <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-xmark"></i>
                 </ul>
-                <i class="fa-solid fa-xmark"></i>
                 <i class="fa-solid fa-bars"></i>
             </nav>
             <div class="header-text">
@@ -133,20 +133,6 @@
             document.getElementById(tabname).classList.add('active-tab');
             Array.from(tablinks).find(link => link.getAttribute('onclick').includes(tabname)).classList.add('active-link');
         }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const bars = document.querySelector('.fa-bars');
-            const xmark = document.querySelector('.fa-xmark');
-            const nav = document.querySelector('nav');
-
-            bars.addEventListener('click', function() {
-                nav.classList.add('active');
-            });
-
-            xmark.addEventListener('click', function() {
-                nav.classList.remove('active');
-            });
-        });
     </script>
 </body>
 </html>
