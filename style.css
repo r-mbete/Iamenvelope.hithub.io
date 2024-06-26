@@ -497,3 +497,16 @@ nav ul {
         margin-right: 10px; 
     }
 }
+ .fa-solid.fa-xmark {
+        display: block;  
+        position: absolute;
+        bottom: 20px;  
+        right: 20px;  
+        font-size: 25px;  
+    }
+
+    .fa-solid.fa-bars {
+        display: block; 
+        font-size: 25px; 
+        cursor: pointer;  
+    }
