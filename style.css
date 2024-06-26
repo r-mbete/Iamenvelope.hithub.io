@@ -375,20 +375,20 @@ nav ul {
         }
 @media only screen and (max-width: 600px) {
     #header {
-        height: auto; /* Adjust as needed */
+        /* Adjust header styles for smaller screens */
     }
 
     .header-text {
-        margin-top: 20%;
-        font-size: 24px; /* Adjust as needed */
+        margin-top: 80%;
+        font-size: 18px;
     }
 
     .header-text h1 {
-        font-size: 40px; /* Adjust as needed */
+        font-size: 30px;
     }
 
     .header-text h1 span {
-        font-size: 36px; /* Adjust as needed */
+        font-size: 26px;
     }
 
     #About {
@@ -429,17 +429,71 @@ nav ul {
         font-size: 14px;
     }
 
-    #Dining {
-        padding
+    .services-list {
+        grid-gap: 10px;
     }
-     .social-icons {
+
+    .services-list div {
+        padding: 15px;
+    }
+
+    #Dining {
+        padding: 30px 0;
+    }
+
+    .dining-images {
         justify-content: center;
-        margin-top: 20px; /* Add margin or padding adjustment as needed */
+    }
+
+    .dining-images img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .layer {
+        padding: 10px;
+    }
+
+    #Meetings\\/Events {
+        padding: 30px 0;
+    }
+
+    .meetings-images {
+        gap: 10px;
+    }
+
+    .meetings-images img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .about-col-2 {
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+    #contact {
+        padding: 30px 0;
+    }
+
+    .contact-left {
+        padding-left: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .social-icons a {
-        margin-right: 10px; /* Adjust spacing between icons */
+        margin-right: 10px; 
     }
 }
-
-
