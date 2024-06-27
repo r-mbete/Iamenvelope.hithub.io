@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background: #000000;
+	color: #ffd800;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+}
+#header {
+	width: 100%;
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+container {
+	padding: 10px 10%;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.logo-container {
+	display: flex;
+	justify-content: flex-start;
+	flex: 0 1 auto;
+}
+
+.Logo {
+	max-width: 150px;
+	height: auto;
+}
+
+nav ul {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+	nav ul li {
+		display: inline-block;
+		list-style: none;
+		margin: 0 10px;
+	}
+
+		nav ul li a {
+			text-decoration: none;
+			color: #ffd800;
+			font-weight: bold;
+			transition: color 0.3s ease;
+		}
+
+			nav ul li a:hover {
+				color: #ffffff;
+			}
+.header-text {
+	text-align: center;
+	margin-top: 20px;
+}
+
+	.header-text h1 {
+		color: #ffffff;
+		font-family: 'Montserrat', cursive;
+		margin-bottom: 15px;
+	}
+
+	.header-text p {
+		color: #ffd800;
+		font-family: 'Montserrat', cursive;
+		margin-bottom: 15px;
+	}
+#Booking {
+	padding: 50px 0;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.Booking-left img {
+	flex-basis: 40%;
+}
+
+.Booking-left img {
+	margin-top: 30px;
+	width: 80%;
+	border-radius: 15px;
+}
+.Booking-right {
+	flex-basis: 55%;
+	text-align: left;
+}
+
+	.Booking-right form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+		.Booking-right form input,
+		.Booking-right form textarea {
+			width: 100%;
+			border: 0;
+			outline: none;
+			background: #262626;
+			padding: 15px;
+			margin: 15px 0;
+			color: #fff;
+			font-size: 18px;
+			border-radius: 6px;
+		}
+
+		.Booking-right form button {
+			display: flex;
+			justify-content: flex-end;
+			margin: 15px 0;
+		}
+
+		.Booking-right form button {
+			padding: 14px 60px;
+			display: inline-block;
+			margin-top: 20px;
+			border: 1px solid #ff004f;
+			border-radius: 4px;
+			color: #ff004f;
+			font-size: 18px;
+			cursor: pointer;
+		}
+
+			.Booking-right form button:hover {
+				background-color: #ff6a00;
+				color: #ffd800;
+			}
