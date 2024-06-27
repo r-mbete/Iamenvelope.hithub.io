@@ -319,11 +319,6 @@ nav ul li a:hover {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.reserve-button:hover {
-    background-color: #ffbf00; 
-    color: #000000;
-}
-}
 
 
 .fa-solid.fa-bars,
