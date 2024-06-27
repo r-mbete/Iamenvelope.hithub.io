@@ -126,13 +126,9 @@ nav ul li a:hover {
     align-items: center;
     max-width: 800px;
     text-align: center;
-}
-.about-col-2 {
-    flex: 1;
-    padding-left: 20px;
     color: #fff; 
+    padding-left: 20px;
 }
-
 
 .tab-titles {
     display: flex;
@@ -236,10 +232,9 @@ nav ul li a:hover {
 }
 
 #Meetings/Events h1 {
-   color: #ffd800;
+    color: #ffd800;
     font-family: 'Montserrat', cursive;
 }
-
 
 .meetings-images {
     display: flex;
@@ -299,6 +294,7 @@ nav ul li a:hover {
 .social-icon:hover {
     color: #ffffff;
 }
+
 .contact-right {
     display: flex;
     align-items: center;
@@ -306,7 +302,8 @@ nav ul li a:hover {
     width: 100%;
     margin-top: 20px;
 }
-reserve-button {
+
+.reserve-button {
     background-color: #ffd800; 
     color: #000000;
     border: none;
@@ -315,12 +312,14 @@ reserve-button {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
 }
 
 .reserve-button:hover {
-    background-color: #ffd800; 
+    background-color: #e6c700;
     color: #000000;
 }
+
 .fa-solid.fa-bars,
 .fa-solid.fa-xmark {
     display: none;
@@ -332,10 +331,11 @@ reserve-button {
 #dining:hover .layer {
     opacity: 1;
 }
+
 .menu-icon, .close-icon {
     display: none; 
 }
+
 .dining-item .layer {
-        transition: none;
-
-
+    transition: none;
+}
