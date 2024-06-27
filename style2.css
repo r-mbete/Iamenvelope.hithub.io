@@ -104,13 +104,17 @@ nav ul li a:hover {
     border: 2px solid #ffd800; /* Yellow border added */
     border-radius: 15px;
 }
+.container {
+    padding: 10px 10%;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto; 
+}
 
 .Booking-right {
-    flex-basis: 55%;
+    flex-basis: 60%; 
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content vertically */
+    margin-left: 20px; 
 }
 
 .Booking-right form {
@@ -135,11 +139,6 @@ nav ul li a:hover {
 }
 
 
-.Booking-right {
-    flex-basis: 60%; 
-    text-align: center; 
-    margin: 0 auto;
-}
 .Booking-right form button{
     display: flex;  
     justify-content: flex-end;  
