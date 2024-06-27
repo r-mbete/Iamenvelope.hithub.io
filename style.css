@@ -314,5 +314,7 @@ nav ul li a:hover {
 .menu-icon, .close-icon {
     display: none; 
 }
+.dining-item .layer {
+        transition: none;
 
 
