@@ -100,13 +100,10 @@ nav ul {
 }
 
 .Booking-left img {
-	flex-basis: 40%;
-}
-
-.Booking-left img {
-	margin-top: 30px;
-	width: 80%;
-	border-radius: 15px;
+    flex-basis: 40%;
+    margin-top: 30px;
+    width: 60%; /* Adjust the width as needed */
+    border-radius: 15px;
 }
 .Booking-right {
 	flex-basis: 55%;
