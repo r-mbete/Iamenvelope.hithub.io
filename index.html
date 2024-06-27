@@ -133,6 +133,20 @@
             document.getElementById(tabname).classList.add('active-tab');
             Array.from(tablinks).find(link => link.getAttribute('onclick').includes(tabname)).classList.add('active-link');
         }
+
+        // Add touch event listeners for mobile devices
+        document.addEventListener("DOMContentLoaded", function () {
+            var diningItems = document.querySelectorAll(".dining-item");
+
+            diningItems.forEach(function (item) {
+                item.addEventListener("touchstart", function () {
+                    diningItems.forEach(function (item) {
+                        item.classList.remove("hover-effect");
+                    });
+                    this.classList.add("hover-effect");
+                });
+            });
+        });
     </script>
 </body>
 </html>
