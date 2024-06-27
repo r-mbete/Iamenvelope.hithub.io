@@ -15,6 +15,7 @@ body {
     align-items: center;
     margin: 0;
 }
+
 #header {
     width: 100%;
     height: 50vh;
@@ -40,6 +41,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    margin-right: 20px; /* Adjusted margin to space items */
 }
 
 nav ul li {
@@ -116,6 +118,7 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 10px;
     max-width: 400px; /* Adjusted max-width */
+    margin: 0 auto; /* Center form horizontally */
 }
 
 .Booking-right form input,
