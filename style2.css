@@ -123,7 +123,8 @@ nav ul li a:hover {
 
 .Booking-right form input,
 .Booking-right form textarea {
-    width: 100%;
+    width: 100%; 
+    max-width: 100%; 
     border: 0;
     outline: none;
     background: #262626;
