@@ -140,14 +140,19 @@ nav ul li a:hover {
     text-align: center; 
     margin: 0 auto;
 }
+.Booking-right form button{
+    display: flex;  
+    justify-content: flex-end;  
+    margin: 15px 0;  
+}
 
 .Booking-right form button {
     padding: 14px 60px;
     display: inline-block;
     margin-top: 20px;
-    border: 1px solid #ff004f;
+    border: 1px solid #ffd800;
     border-radius: 4px;
-    color: #ff004f;
+    color: #ff6a00;
     font-size: 18px;
     cursor: pointer;
 }
