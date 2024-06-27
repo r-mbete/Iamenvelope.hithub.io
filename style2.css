@@ -123,8 +123,7 @@ nav ul li a:hover {
 
 .Booking-right form input,
 .Booking-right form textarea {
-    width: 100%; 
-    max-width: 100%; 
+    width: calc(100% - 30px);
     border: 0;
     outline: none;
     background: #262626;
@@ -133,6 +132,13 @@ nav ul li a:hover {
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+}
+
+
+.Booking-right {
+    flex-basis: 60%; 
+    text-align: center; 
+    margin: 0 auto;
 }
 
 .Booking-right form button {
